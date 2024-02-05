@@ -1,0 +1,118 @@
+:root {
+  --blue-color: #368681;
+  --brown-color: #4d342b;
+  --rose-color: #f1cab1;
+  --main-color: #fee7cb;
+  --border-radius: 8px;
+  --margin-LR: 8rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.productSection {
+  font-size: 20px;
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+  min-height: 600px;
+}
+@media (max-width: 530px) {
+  .productSection {
+    margin: 2rem 0.5rem;
+  }
+}
+.shopContainer {
+  margin-right: 280px;
+}
+.productHolder {
+  background-color: #fee7cb26;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: var(--brown-color);
+  height: 470px;
+  width: 300px;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.productHolder img {
+  height: 300px;
+  display: block;
+  border-radius: var(--border-radius);
+  transition: 1s cubic-bezier(0, 0, 0.2, 1);
+  width: 100%;
+}
+.productHolder:hover img {
+  transform: scale3d(1.05, 1.05, 1.05);
+  /* opacity: 0.1; */
+}
+/* .productHolder:hover .details {
+    height: 100%;
+    opacity: 1;
+  } */
+
+/* .details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.4s ease;
+  } */
+.details {
+  margin-top: 10px;
+}
+.details div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* .cart {
+    transition: 0.3s;
+  } */
+.cart:hover {
+  cursor: pointer;
+}
+
+.details .addToCart {
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  color: white;
+  background-color: var(--blue-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  transition: all 0.3s;
+}
+.details .addToCart:hover {
+  filter: brightness(1.2);
+}
+.pagination {
+  direction: ltr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+.loading {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: 500;
+}
+.collapse {
+  display: flex;
+  position: relative;
+}

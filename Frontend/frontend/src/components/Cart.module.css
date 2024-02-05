@@ -1,0 +1,54 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 18.3rem var(--margin-LR) var(--margin-LR);
+  flex-direction: column;
+}
+.description {
+  align-self: flex-start;
+  margin: 1rem 8rem 1rem 0rem;
+  line-height: 1.8rem;
+}
+.displayCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 10px;
+}
+.checkoutBTN {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  background-color: var(--rose-color);
+  padding: 1.3rem;
+  margin: 2rem 7.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--blue-color);
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-size: 1.4rem;
+  transition: 0.6s;
+}
+.checkoutBTN:hover {
+  scale: 1.02;
+  background-color: var(--blue-color);
+  border: 1px solid var(--rose-color);
+}
+.startShopping {
+  font-size: 40px;
+  margin-top: 20px;
+}
+@media (max-width: 485px) {
+  .checkoutBTN {
+    flex-direction: column;
+    align-self: center;
+    width: 150px;
+  }
+  .description {
+    align-self: center;
+  }
+}

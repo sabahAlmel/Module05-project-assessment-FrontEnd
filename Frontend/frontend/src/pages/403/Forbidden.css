@@ -1,0 +1,37 @@
+.forbiddenContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  gap: 1rem;
+}
+.forbiddenContainer > h1 {
+  font-size: 60px;
+}
+.forbiddenContainer > h2 {
+  align-self: center;
+  font-size: 50px;
+}
+.forbiddenContainer > p {
+  font-size: 20px;
+}
+.forbiddenButton {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: #dc0000;
+  border-radius: 30px;
+  margin-top: 2rem;
+  height: 13%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  width: 150px;
+  padding: 0.5rem;
+}
+.forbiddenButton:hover {
+  background-color: #7c0000;
+}
